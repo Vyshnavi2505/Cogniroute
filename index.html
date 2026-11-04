@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Cogniroute is an affordable, camera-free driver fatigue alert prototype designed to support safer journeys.">
+<title>Cogniroute | Safer Journeys Start Here</title>
+<style>
+:root{--navy:#0b1730;--blue:#1769ff;--cyan:#31d7d0;--ink:#15233b;--muted:#5b6980;--light:#f3f7fc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6}
+header{background:var(--navy);color:white;padding:18px 7%;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:1.5rem;letter-spacing:.4px}.logo span{color:var(--cyan)}nav a{color:white;text-decoration:none;margin-left:20px;font-size:.95rem}
+.hero{background:radial-gradient(circle at 80% 25%,#204a83 0,transparent 35%),linear-gradient(125deg,#0b1730,#122e55);color:white;padding:82px 7% 76px;display:grid;grid-template-columns:1.3fr .7fr;gap:36px;align-items:center}
+.kicker{color:var(--cyan);text-transform:uppercase;letter-spacing:2px;font-weight:bold;font-size:.8rem}
+h1{font-size:clamp(2.4rem,5vw,4.5rem);line-height:1.05;margin:14px 0 20px;max-width:760px}
+.hero p{font-size:1.12rem;color:#d8e5f8;max-width:650px}.btn{display:inline-block;background:var(--cyan);color:#06213b;padding:13px 20px;border-radius:9px;text-decoration:none;font-weight:800;margin:10px 10px 0 0}.btn.secondary{background:transparent;border:1px solid #9db8db;color:white}
+.device{background:linear-gradient(145deg,#1b3152,#07101f);border:1px solid #45658d;border-radius:26px;padding:28px;max-width:330px;margin:auto;box-shadow:0 24px 60px #0005;text-align:center}
+.sensor{width:90px;height:90px;border-radius:50%;border:7px solid #4d6687;background:#0b1525;margin:0 auto 18px;display:grid;place-items:center;box-shadow:0 0 28px #31d7d044}
+.sensor:after{content:"";width:24px;height:24px;border-radius:50%;background:var(--cyan);box-shadow:0 0 20px var(--cyan)}
+.device strong{display:block;font-size:1.35rem}.device small{color:#c2d4ed}.lights{display:flex;justify-content:center;gap:10px;margin:22px}.light{width:13px;height:13px;border-radius:50%;background:#ffbf47;box-shadow:0 0 12px #ffbf47}
+section{padding:66px 7%}.section-head{text-align:center;max-width:760px;margin:0 auto 34px}.section-head h2{font-size:2.1rem;margin:0 0 12px}.section-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border:1px solid #e2eaf4;border-radius:16px;padding:24px;box-shadow:0 8px 28px #102b4b0a}.icon{font-size:1.8rem}.card h3{margin:10px 0}.card p{color:var(--muted);margin-bottom:0}
+.band{background:var(--light)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{padding:22px;border-left:4px solid var(--blue);background:white;border-radius:0 12px 12px 0}.step b{color:var(--blue)}
+.note{font-size:.9rem;color:var(--muted);max-width:900px;margin:28px auto 0;text-align:center}
+.cta{background:var(--navy);color:white;text-align:center}.cta p{color:#d8e5f8;max-width:650px;margin:12px auto}.cta .btn{margin-top:18px}
+footer{background:#07101f;color:#c3d0e3;padding:24px 7%;font-size:.88rem;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:58px}.device{margin-top:10px}.cards,.steps{grid-template-columns:1fr}nav a{margin:0 12px 0 0}section{padding:48px 6%}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">C<span>O</span>GNIROUTE</div>
+  <nav><a href="#features">Features</a><a href="#how">How it works</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+<section class="hero">
+  <div>
+    <div class="kicker">Driver safety • Camera-free prototype</div>
+    <h1>Safer journeys start with staying alert.</h1>
+    <p>Cogniroute is an affordable driver-fatigue alert prototype designed to help drivers notice signs of drowsiness and respond sooner.</p>
+    <a class="btn" href="#contact">Request a demonstration</a>
+    <a class="btn secondary" href="#features">Explore the features</a>
+  </div>
+  <div class="device" aria-label="Illustration of a compact sensor device">
+    <div class="sensor"></div><strong>COGN IROUTE</strong><small>Driver alert system</small>
+    <div class="lights"><i class="light"></i><i class="light"></i><i class="light"></i></div>
+    <small>IR sensor · Buzzer · LED indicators</small>
+  </div>
+</section>
+<section id="features">
+  <div class="section-head"><h2>Simple technology. A safety-first goal.</h2><p>Designed around accessible components for a practical driver-awareness prototype.</p></div>
+  <div class="cards">
+    <article class="card"><div class="icon">👁️</div><h3>IR eye-blink sensor</h3><p>Monitors eye-blink activity as a potential indicator of drowsiness.</p></article>
+    <article class="card"><div class="icon">🔔</div><h3>Immediate alert</h3><p>A buzzer and LED indicators can alert the driver when the prototype detects a configured trigger.</p></article>
+    <article class="card"><div class="icon">🧰</div><h3>Camera-free design</h3><p>A straightforward sensor-based approach built with affordability and ease of demonstration in mind.</p></article>
+  </div>
+</section>
+<section class="band" id="how">
+  <div class="section-head"><h2>How Cogniroute works</h2><p>A simple three-step concept for driver awareness.</p></div>
+  <div class="steps">
+    <div class="step"><b>01 — Detect</b><h3>Sense eye-blink activity</h3><p>The IR sensor provides readings to the device controller.</p></div>
+    <div class="step"><b>02 — Evaluate</b><h3>Check the trigger</h3><p>The controller checks readings against the prototype's configured threshold.</p></div>
+    <div class="step"><b>03 — Alert</b><h3>Notify the driver</h3><p>The buzzer and LEDs provide an alert when the configured condition is met.</p></div>
+  </div>
+  <p class="note">Important: Cogniroute is a developing prototype, not a certified medical or automotive safety device. It cannot guarantee drowsiness detection or prevent accidents. Drivers should stop and rest whenever they feel sleepy.</p>
+</section>
+<section>
+  <div class="section-head"><h2>Built for drivers and fleet teams</h2><p>We aim to support awareness for people who spend long hours on the road.</p></div>
+  <div class="cards">
+    <article class="card"><h3>Private vehicle owners</h3><p>A driver-awareness concept for long trips and highway journeys.</p></article>
+    <article class="card"><h3>Fleet operators</h3><p>A prototype to demonstrate how sensor-based alerts may fit into a broader safety programme.</p></article>
+    <article class="card"><h3>Commercial drivers</h3><p>A reminder that alertness matters—and that breaks are essential when fatigue sets in.</p></article>
+  </div>
+</section>
+<section class="cta" id="contact">
+  <div class="section-head"><h2>Want to learn more about Cogniroute?</h2><p>Contact our team to discuss the prototype, request a demonstration, or explore a pilot.</p>
+    <a class="btn" href="mailto:YOUR_EMAIL@example.com?subject=Cogniroute%20demo%20request">Email us for a demo</a>
+  </div>
+  <p>Replace the sample email address with your real contact email before publishing.</p>
+</section>
+</main>
+<footer><span>© Cogniroute — Driver fatigue alert prototype</span><span>Designed for awareness. Never replace rest or safe driving practices.</span></footer>
+</body>
+</html>
